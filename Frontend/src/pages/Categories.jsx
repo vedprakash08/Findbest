@@ -10,7 +10,7 @@ const Areas = () => {
   };
 
   return (
-    <div className="min-h-[50vh] flex items-center justify-center bg-stone-300 text-center h-screen">
+    <div className="min-h-[110vh] flex items-center justify-center bg-stone-300 text-center h-screen">
       <div className=" flex flex-col items-center h-2/6 rounded-3xl  w-2/5 bg-white" >
         <div className="text-center">
           <div className="pt-10 flex flex-col items-center">
