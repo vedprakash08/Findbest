@@ -14,7 +14,7 @@ const navbar = () => {
         </Link>
 
         <button>
-          <a href="https://github.com/Ankit-11525/findbest" target="blank">
+          <a href="https://github.com/vedprakash08/Findbest" target="blank">
             <img className="h-10" src="github-logo.png" alt="GitHub Logo" />
           </a>
         </button>
