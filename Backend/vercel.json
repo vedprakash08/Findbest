@@ -11,12 +11,12 @@
             "src":"/api(.*)",
             "dest":"server.js"
         }
-    ]
+    ],
     "functions": {
     "api": {
       "runtime": "nodejs14.x",
       "memory": 1024,
-      "timeout": 30 // Increase timeout to 30 seconds, for example
+      "timeout": 30 
     }
   }
 }
