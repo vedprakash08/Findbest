@@ -19,7 +19,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const port = process.env.PORT;
+const port = process.env.PORT || 4000;
 // Define the API endpoint for medicine search
 app.get("/api/medicine/:name", async (req, res) => {
   const { name } = req.params;
@@ -55,17 +55,17 @@ app.get("/api/clothing/:name", async (req, res) => {
   const { name } = req.params;
 
   const ajioURL = `https://www.ajio.com/search/?text=${name}`;
-  const myntraURL = `https://www.myntra.com/${name}`;
+  // const myntraURL = `https://www.myntra.com/${name}?rawQuery=${name}`;
   const snapdealURL = `https://www.snapdeal.com/search?keyword=${name}`;
 
   try {
     const searchResults = [];
 
-    const myntraResult = await getClothesMyntra(myntraURL);
+    // const myntraResult = await getClothesMyntra(myntraURL);
     const ajioResult = await getClothesAjio(ajioURL);
     const snapdealResult = await getClothesSnapdeal(snapdealURL);
 
-    searchResults.push(myntraResult);
+    // searchResults.push(myntraResult);
     searchResults.push(ajioResult);
     searchResults.push(snapdealResult);
 
