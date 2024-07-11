@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../../src/github-logo.png"
 const navbar = () => {
   return (
     <div>
@@ -15,7 +16,7 @@ const navbar = () => {
 
         <button>
           <a href="https://github.com/vedprakash08/Findbest" target="blank">
-            <img className="h-10" src="githubLogo.png" alt="GitHub Logo" />
+            <img className="h-10" src={logo} alt="GitHub Logo" />
           </a>
         </button>
       </div>
