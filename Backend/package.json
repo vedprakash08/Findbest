@@ -1,5 +1,5 @@
 {
-  "name": "Backend",
+  "name": "findbest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -29,7 +29,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+     "build": "react-scripts build"
   },
   "eslintConfig": {
     "extends": [

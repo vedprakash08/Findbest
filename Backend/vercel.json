@@ -11,5 +11,12 @@
             "src":"/api(.*)",
             "dest":"server.js"
         }
-    ]
+    ],
+    "functions": {
+    "api": {
+      "runtime": "nodejs14.x",
+      "memory": 1024,
+      "timeout": 30 
+    }
+  }
 }
