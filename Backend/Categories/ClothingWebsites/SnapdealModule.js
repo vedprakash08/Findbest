@@ -11,9 +11,8 @@ puppeteer.use(AdblockerPlugin({ blockTrackers: true }));
 const getClothesSnapdeal = async (URL) => {
   try {
     const data = [];
-    // const browser = await puppeteer.launch({ headless: "new" });
-    const browser = await puppeteer.launch({ headless: "true", args: ['--no-sandbox', '--disable-setuid-sandbox'] });
-
+    const browser = await puppeteer.launch({ headless: "new" });
+    
     const page = await browser.newPage();
 
     await page.goto(URL);
