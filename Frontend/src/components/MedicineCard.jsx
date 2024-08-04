@@ -51,7 +51,7 @@ const MedicineCard = ({
           </a>
         </div>
       </div>
-      <div className="font-bold pt-2 text-lg text-sky-900">Medicines from {scrapFrom}</div>
+      <div className="font-bold pt-2 text-lg text-sky-900">{medicineName} from {scrapFrom}</div>
     </div>
   );
 };

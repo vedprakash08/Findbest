@@ -52,7 +52,7 @@ const SmartPhoneCard = ({
           </a>
         </div>
       </div>
-      <div className="font-bold pt-2 text-lg text-sky-900">grocerys from {scrapFrom}</div>
+      <div className="font-bold pt-2 text-lg text-sky-900">{name} from {scrapFrom}</div>
     </div>
   );
 };
