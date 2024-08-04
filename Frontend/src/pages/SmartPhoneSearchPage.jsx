@@ -37,7 +37,7 @@ const SmartPhoneSearchPage = () => {
         Search
       </button>
       <div className="mt-6 mx-auto">
-        {searchResults.length === 1 ? (
+        {searchResults.length === 0 ? (
           <p>No results found.</p>
         ) : (
           <div className="p-8">
